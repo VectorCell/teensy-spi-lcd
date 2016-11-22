@@ -4,4 +4,5 @@ main.o: main.cpp WProgram.h avr/pgmspace.h avr/interrupt.h \
  new.h avr_emulation.h usb_serial.h usb_desc.h usb_seremu.h \
  usb_keyboard.h keylayouts.h usb_mouse.h usb_joystick.h usb_midi.h \
  usb_rawhid.h usb_flightsim.h usb_mtp.h usb_audio.h usb_touch.h \
- usb_undef.h WCharacter.h elapsedMillis.h Arduino.h IntervalTimer.h
+ usb_undef.h WCharacter.h elapsedMillis.h Arduino.h IntervalTimer.h \
+ spi4teensy3.h mk20dx128.h kinetis.h core_pins.h

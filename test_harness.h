@@ -164,3 +164,55 @@ void set_signal_handlers ()
 	signal(SIGINT, signal_handler);
 	signal(SIGTERM, signal_handler);
 }
+
+
+namespace spi4teensy3 {
+	void init();
+	void init(uint8_t speed);
+	void init(uint8_t cpol, uint8_t cpha);
+	void init(uint8_t speed, uint8_t cpol, uint8_t cpha);
+	void send(uint8_t b);
+	void send(void *bufr, size_t n);
+	uint8_t receive();
+	void receive(void *bufr, size_t n);
+}
+
+void spi4teensy3::init ()
+{
+	spi4teensy3::init(0, 0, 0);
+}
+
+void spi4teensy3::init (uint8_t speed)
+{
+	spi4teensy3::init(0, 0, 0);
+}
+
+void spi4teensy3::init (uint8_t speed, uint8_t cpha)
+{
+	spi4teensy3::init(0, 0, 0);
+}
+
+void spi4teensy3::init (uint8_t speed, uint8_t cpol, uint8_t cpha)
+{
+	printf("spi4teensy3::init\n");
+}
+
+void spi4teensy3::send (uint8_t b)
+{
+
+}
+
+void spi4teensy3::send (void *bufr, size_t n)
+{
+
+}
+
+uint8_t spi4teensy3::receive ()
+{
+	return 0;
+}
+
+void spi4teensy3::receive (void *bufr, size_t n)
+{
+
+}
